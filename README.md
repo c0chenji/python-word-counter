@@ -13,7 +13,10 @@ A python word counter, counts words in text files
 
 ---
 ## General Info
-This project is basically a word-counter with text-file as input and output.
+A simple application that takes a UTF-8 plain-text file as input and outputs:  
+* Total number of words in text file  
+* Ten most common words and number of occurrences for each
+
 
 ---
 ## Technologies
