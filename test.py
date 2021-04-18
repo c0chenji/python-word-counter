@@ -96,6 +96,7 @@ class InputTest(unittest.TestCase):
         self.assertEqual(dict_result,{"one":1, "two":2,"three":3,"four":4,"five":5,"six":6,"seven":7,"eight":8,"nine":9,"ten":10,"eleven":11})
         
 class OutputTest(unittest.TestCase):
+    # This program is running on windows, the directory formats should be changed if you are using linux.
     # Tests for checking if output files are created correctly.
     def test_empty_file(self):
         target = GetOutput(r".\txt_for_test\empty_input.txt",r".\txt_for_test\empty_output.txt").sorted_and_save()
