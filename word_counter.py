@@ -3,7 +3,7 @@ from helper.help_functions import *
 import sys
 
 class InputFile:
-""" A class for creating basic data lick total words and dictionary of words"""
+    """ A class for creating basic data lick total words and dictionary of words"""
     def __init__(self, filename, total_words=0):
         self.filename = filename
         self.total_words = total_words
@@ -40,7 +40,7 @@ class InputFile:
 
 
 class GetOutput:
-""" A class for sorting and storing the output created by InputFile()"""
+    """ A class for sorting and storing the output created by InputFile()"""
     def __init__(self, input_file, output_file="output.txt"):
     # Another option is place these two parameter to sorted_and_save() method    
         self.input_file = input_file
