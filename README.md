@@ -95,11 +95,11 @@ If the string is extremely unformated and complicated as below:
 "Go,'G8, you lost your$8,888.01!" the-boss stoped&said.
 ```
 According to the definitions, **"G8"** is the abbreviation for the Group of Eight(4 words), then it should not be counted as a word.  
-**$8,888.01** is literally a number, it is not a word either. In addtion, it is hard to process strings like "your$8,888.01!" without third party libraries.
+**$8,888.01** is literally a number, it is not a word either. In addtion, it is hard to process strings like "your$8,888.01!"(maybe regexp could help) without third party libraries.
 To implement this case, the installation of multiple third-party libraries like vocabulary-checker is required(It is violating the rule of this project). Hence I will not consider this case in this project.
 
 
-Therefore, I will consider the data of input are reasonable words like **case 2** (abbreviations and numbers should not be count).
+Therefore, I will consider the data of input are reasonable words like **case 2** (abbreviations and numbers should not be counted).
 
 
 
