@@ -84,10 +84,10 @@ For this case, I will replace punctuations with spaces first, then split them in
 * **Case 3**:  
 If the string is extremely unformated and complicated as below:  
 ```python
-"Go,'G8, you lost $8,888.01!" the-boss stoped&said.
+"Go,'G8, you lost your$8,888.01!" the-boss stoped&said.
 ```
 According to the definitions, **"G8"** is the abbreviation for the Group of Eight(4 words), then it should not be counted as a word.  
-**$8,888.01** is literally a number, it is not a word either.
+**$8,888.01** is literally a number, it is not a word either. In addtion, it is hard to process strings like "your$8,888.01!" without third party libraries.
 To implement this case, the installation of multiple third-party libraries like vocabulary-checker is required(It is violating the rule of this project). Hence I will not consider this case in this project.
 
 
