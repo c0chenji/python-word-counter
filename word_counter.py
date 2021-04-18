@@ -12,6 +12,8 @@ class InputFile:
     def count_and_save(self):
         counter = {}
         try:
+            # Note: Without encoding,
+            #       the lines of txt file copied from websites would cause errors
             with open(self.filename, encoding="utf8") as f:
                 for line in f.readlines():
                     # Trim every line(remove spaces on the left or right).
