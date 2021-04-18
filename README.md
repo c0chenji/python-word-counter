@@ -63,7 +63,7 @@ The target we need to sort would be converted into:
 ```  
 Then the second element in each item would be the target we need to do the comparison.
 
-### Punctuations removal:  
+#### Punctuations removal:  
 I got two ways to handle punctuations removal.  
 * Use translate() and maketrans() of "string" library to replace punctuations with spaces in a string.  
 * Use re.sub() of "re" library to handle the replacement, but it is slower than the previous method.
