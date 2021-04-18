@@ -62,7 +62,14 @@ The target we need to sort would be converted into:
 [("The",12),("They",2),("Their",20)]
 ```  
 Then the second element in each item would be the target we need to do the comparison.
-#### Inputs: 
+
+### Punctuations removal:  
+I got two ways to handle punctuations removal.  
+* Use translate() and maketrans() of "string" library to replace punctuations with spaces in a string.  
+* Use re.sub() of "re" library to handle the replacement, but it is slower than the previous method.
+* Using join() and replace() is also a solution, but it is much slower than the previous two methods.  
+
+#### Inputs cases: 
 A UTF-8 plain-text file of words and punctuations. However, there are multiple cases we need to consider based on each string line.
 
 * **Case 1**:  
@@ -95,7 +102,7 @@ Therefore, I will consider the data of input are reasonable words like **case 2*
 
 
 
-#### Outputs:  
+#### Outputs cases:  
 * **Case 1**:  
 If "**Top ten words**" are simply referred to the first ten elements of a selected list, then the problem would be solved by getting the first ten elements in the list.
 * **Case 2**:  
