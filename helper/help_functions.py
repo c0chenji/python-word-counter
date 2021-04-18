@@ -32,7 +32,6 @@ def add_qualified_words(target_file, target_list, top_flag):
 # Note: string.punctuation contains most commonly used marks in a string
 #       if string library is not allowed, we can  simply create a string to represent punctuation marks.
 # Replace punctuation mark with space
-
 def remove_punctuations(s):
     translator = str.maketrans(string.punctuation, ' '*len(string.punctuation))
     return s.translate(translator)
@@ -42,9 +41,8 @@ def remove_punctuations(s):
 #     s = re.sub('['+string.punctuation+']', ' ', s)
 #     return s
 
+
 # A Normal merge sort function, but input is changed to a list of tuples
-
-
 def merge_sort(array, left_index, right_index):
     if left_index >= right_index:
         return
