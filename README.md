@@ -120,7 +120,25 @@ To test the application, change current directory to python_word_counter folder 
 
 ```python
 python word-counter.py input.txt
-```
+```  
+In output.txt, the result would be:
+
+```python
+Top 10 Words: 
+naomi 32 
+luck 24 
+tension 18 
+two 15 
+six 14 
+alice 14 
+jack 13 
+one 11 
+three 9 
+four 9 
+eight 8 
+adfe 7 
+Total Words: 194
+```  
 
 
 ## Test
