@@ -94,12 +94,15 @@ class GetOutput:
 
 
 if __name__ == "__main__":
-    input_file = sys.argv[1]
     try:
-        if input_file[-4:] == ".txt":
+        input_file = sys.argv[1]
+        if input_file.endswith(".txt"):
             output = GetOutput(input_file).sorted_and_save() 
         else:
             raise Exception
     except Exception as e:
-        print("Incorrect file type! ")
+        print("Require input file or correct file name !")
+        sys.exit()
+
+        
     
