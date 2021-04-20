@@ -1,4 +1,3 @@
-
 from helper.help_functions import *
 import sys
 
@@ -102,7 +101,8 @@ if __name__ == "__main__":
             raise Exception
     except Exception as e:
         print("Require input file or correct file name !")
-        sys.exit()
+        #or
+        # sys.exit("Require input file or correct file name !")
 
         
     
