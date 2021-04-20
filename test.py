@@ -1,7 +1,5 @@
 import unittest
 
-from txt_for_test import *
-from helper.test_helper import *
 from word_counter import InputFile, GetOutput
 from helper.help_functions import *
 

@@ -2,8 +2,11 @@ import string
 import re
 
 
-# Add top ten words and its number to the file
+
 def add_qualified_words(target_file, target_list, top_flag):
+    """Add top ten words and its number to the file
+       If adding top thousnads words, using generator would be better 
+    """
     top_target = target_list[0][1]
     i = 0
     top_flag = top_flag-1
